@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@300;400;700;900&display=swap');
+/*
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+:root {
+    --beige-light: #FAECD6; 
+    --beige-medium: #F2DEBA;
+    --green: #4E6C50;
+    --red: #820000;
+}
+/*
+var(--beige-light);
+var(--beige-medium);
+var(--green);
+var(--red);
+*/
+* {
+    box-sizing: border-box;
+    border : none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url('/public/images/college_ruled_paper-.jpg');
+    background-position: center;
+    background-size: 36rem;
+    background-repeat: repeat;
+}
+
+.App--container {
+    min-width: 400px;
+    max-width: 100%;
+    max-height: 80%;
+    padding: 5% 20%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    overflow: auto;
+}
+
+/*header - To Do List*/
+.App--header {
+    width: 25rem;
+    height: 100px;
+    background-color: #4E6C50;
+    color: var(--beige-light);
+    padding: 1rem;
+}
+.App--header__title {
+    position: relative;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+.App--header__title::after {
+    content: ' ';
+    width: 160px;
+    height: .5rem;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transform:skewY(-1deg);
+    background-color: #820000;
+    opacity: 30%;
+}
+
+.Main--container{
+    width: 400px;
+    height: 800px;
+    position: relative;
+}
+
+.TodayContainer {
+    background-color: #fff;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.TodoContainer{
+    width: 100%;
+    height: 80%;
+    padding: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+/* 스크롤바 */
+.TodoContainer::-webkit-scrollbar {
+    width: auto;
+    height: auto;
+}
+.TodoContainer::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+}
+.TodoContainer::-webkit-scrollbar-button {
+    color: var(--beige-medium);
+}
+/* ===> 트랙에 색상 적용 필요!!*/
+.TodoContainer::-webkit-scrollbar-track {
+    color: var(--beige-light);
+}
+

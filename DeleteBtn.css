@@ -1,0 +1,9 @@
+.delete__btn{
+    width: 1rem;
+    height: 1rem;
+    background-color: transparent;
+    color: var(--red);
+}
+.fa-trash-can {
+    font-size: 16px;
+}

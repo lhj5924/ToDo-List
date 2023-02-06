@@ -1,0 +1,5 @@
+.checked ~ .todo__content{
+    text-decoration: line-through;
+    color: gray;
+}
+

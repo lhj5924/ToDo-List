@@ -1,0 +1,16 @@
+@import url(/src/App.css);
+
+.today__date{
+    font-size: 1rem;
+    position: relative;
+}
+.today__date::after{
+    content: ' ';
+    width: 160px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background-color: var(--green);
+    opacity: 30%;
+}

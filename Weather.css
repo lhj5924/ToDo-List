@@ -1,0 +1,10 @@
+.weather__today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather__today-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
